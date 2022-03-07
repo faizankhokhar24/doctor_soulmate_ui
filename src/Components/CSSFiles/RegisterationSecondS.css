@@ -1,0 +1,74 @@
+.mainContainerRegisterationSecondS{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    padding-top: 80px;
+    background-color: pink;
+    opacity: .8;
+    position: absolute;
+    top: 50px;
+}
+.CreatePofileFor{
+    display: flex;
+    justify-content: center;
+}
+.selectGenderDiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.maleRegisterImg{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+.secondSBack{
+    background-color: rgb(223, 187, 215);
+}
+.textProfileFor{
+    background-color: white;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+
+
+}
+#textProfileFor{
+    margin-left: 20px;
+
+}
+#textProfileFor1{
+    margin-left: 20px;
+
+}
+.genderPartRegister{
+    display: none;
+}
+.genderPartRegister1{
+    display: block;
+}
+a:-webkit-any-link{
+    text-decoration: none !important;
+    color: black;
+}
+.linkedGender{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+@media (max-width:600px) {
+    .mainContainerRegisterationSecondS{
+        width: 80%;
+    }
+    
+    
+}
+@media (max-width:4110px) {
+    .textProfileFor {
+        width: 116px;
+    }
+    
+    
+}
+
+

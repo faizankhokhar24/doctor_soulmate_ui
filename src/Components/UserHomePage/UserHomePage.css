@@ -1,0 +1,177 @@
+p{
+    margin: 0px;
+    padding: 0px;
+}
+.bottomBarUserHomeContainer{
+    width: 100%;
+    height: 50px;
+    background-color: #C00000;
+    bottom: -25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mainContainerUserHome{
+    position: relative;
+    height: 96vh;
+    width: 100%;
+    background-color: #EEF3FF;
+    display: flex;
+    justify-content: center;
+
+}
+.homeIconBottomMobile{
+    fill: white;
+    font-size: 24px;
+
+}
+.bottomUserHomeMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottomBarTxt{
+    color: white;
+}
+.topUserHomeContainer{
+    background-color: green;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+.topBarTxt{
+    color: #77B291;
+    font-size: 14px;
+    font-weight: 700;
+}
+.topUserHomeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.userImage{
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+.profileDiv{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: #E4E4E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heartIconUser{
+    fill: red;
+    margin-top: 5px;
+}
+.tickUser{
+    fill: green;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+.usersCardsContainerMobile{
+    width: 95%;
+    height: 160px;
+    background-color: white;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.lineUserCard{
+    width: 1px;
+    height: 15px;
+    background-color: black;
+}
+.cardUserFirstRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.userDataCard{
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+}
+.userNameFR1{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.userAgeGender{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.userProffesionCard{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.useAppearanceCard{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nameUserCard{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.nameAndTick{
+    display: flex;
+}
+.secondRowUserCard{
+    height: 100px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.secondRowUserCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.messageIconPartUser{
+    display: flex;
+
+}
+.eyeIconPartUser{
+    display: flex;
+    
+
+}
+.cardIconsMessageEye{
+    font-size: 26px;
+    fill: blue;
+}
+.smsTxtCard{
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 3px;
+    color: #C00000;
+}
+.hrLineMidUserCard{
+    width: 100%;
+    height: 4px;
+    background-color: #B6B6B6;
+    margin-top: 14px;
+}
+
+.mainContainerUserHome{
+    display: none;
+}
+@media (max-width:600px) {
+    .mainContainerUserHome{
+        display: block;
+    }   
+    
+}

@@ -1,0 +1,304 @@
+.mainContainerWeb{
+  background-image: url('./../../Images/stats.jpg');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 40px;
+
+}
+.kep-login-facebook {
+  height: 44px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.mainRegisterTop{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 80px;
+}
+.topWebContainerRegisteration{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  background-image: url('./../../Images/registerBack.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}
+div.input-block {
+    position: relative;
+    width: 97%;
+    
+  }
+
+
+  .formRegister{
+      width: 100%;
+      height: 100%;
+      display: flex !important; 
+      
+      align-items: center !important;
+
+      text-align: center !important;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-bottom: 30px;
+
+
+  }
+  div.input-block input {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #495055;
+    
+    padding: 15px 15px;
+    border-radius: 1rem;
+    border-color: #284B63;
+    outline:none;
+     background-color: rgb(223, 187, 215);
+     width: 85%;
+  
+  }
+  div.input-block em.placeholder {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 4px;
+    font-family: Roboto, sans-serif;
+    color:  #6c757d;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    top: 0;
+    left: 34px;
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+ }
+  div.input-block input:valid + em.placeholder,
+  div.input-block input:focus + em.placeholder {
+    transform: scale(0.8) translateY(-30px);
+    background-color: rgb(223, 187, 215);
+    
+  }
+  div.input-block input:focus{
+    color: #284B63;
+    border-color: #284B63;
+  
+  }
+  div.input-block input:focus + em.placeholder {
+    color: #284B63;
+    
+
+  }
+  .mainContainerRegisterThirdS{
+      padding-top: 30px;
+      height: 93vh;
+      display: flex;
+      flex-direction: col umn;
+     
+      width: 100%;
+      align-items: center;
+      
+  }
+  .placeholder{
+      
+  }
+  .firstName{
+      width: 30px;
+      height: 100px;
+      background-color: red;
+  }
+  .dropdownRegister{
+      width: 90%;
+      height: 63px;
+      border-radius: 10px;
+  }
+  .spinnerParentDiv{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  }
+  select{
+      padding-left: 12px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+ 
+      background-image: url("data:image/svg+xml;utf8,<svg fill='black'   height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 97%;
+      background-position-y: 20px;
+      border: 2px solid black;
+      border-radius: 2px;
+      
+      padding: 1rem;
+      padding-right: 2rem;
+  }
+
+  .listEnd{
+    position: absolute;
+    top: 810px;
+  }
+  .iconDrop{
+    margin-left: -23px;
+  }
+  .iconDrop:hover{
+    display: none;
+  }
+input .focus-visible:hover {
+  display: unset !important;
+
+}
+
+/* input{
+  pointer-events: none;
+} */
+/* input:hover {
+  outline-offset: 0px !important;
+}
+:hover {
+  outline: -webkit-focus-ring-color auto 1px !important;
+}
+
+input:focus-visible{
+  outline-offset: 0px !important;
+
+}
+:focus-visible{
+  outline: -webkit-focus-ring-color auto 1px !important;
+
+} */
+
+.spinnerMiniContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}
+.divSpinner{
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+.divSpinner{
+  width: 100%;
+  display: flex;
+  
+  flex-direction: column;
+  
+}
+
+.spinnerContent{
+  height: 35px;
+  border-radius: 5px;
+  font-size: 15px;
+
+}
+.css-6j8wv5-Input {
+  height: 35px;
+  
+}
+.required{
+  height: 30px;
+  margin-top: 10px;
+}
+.containerCard{
+  width: 450px;
+  padding-top: 30px;
+  background-color: rgb(228, 104, 124);
+  margin-bottom: 30px;
+  height: 533px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+ 
+
+}
+.css-qc6sy-singleValue{
+  font-size: 25px;
+}
+#spinnerMiniContainerClan{
+  display: none;
+}
+#spinnerMiniContainerMTongue{
+  display: none;
+}
+#spinnerMiniContainerClanShow{
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#spinnerMiniContainerMTongueShow{
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+#spinnerMiniContainerMaritalStatusHide{
+  display: none;
+}
+#spinnerMiniContainerReligionHide{
+  display: none;
+}
+#showCitySelect{
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#hideCitySelect{
+  display: none;
+}
+#showSocioSelect{
+  display: block;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+#hideSocioSelect{
+  display: none;
+
+
+}
+#hideFOSelect{
+  display: none;
+}
+#showMOSelect{
+  display: none;
+}
+.registerS1TopBar{
+  height: 65px;
+  width: 100%;
+  background-image: linear-gradient(red, #7C0202);
+  text-align: center;
+}
+.matrimonyHead{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+}
+@media (max-width:600px) {
+  .mainRegisterTop {
+  
+    width: 89%;
+  }
+  .containerCard{
+    width: 80%;
+  }
+}
