@@ -1,0 +1,35 @@
+.mainPhotoGallary{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-right: 15px;
+}
+.gallaryRow1User{
+    display: flex;
+    justify-content: center;
+}
+.userPicIcon{
+    font-size: 150px;
+}
+.userPicIconRow1Col2{
+    font-size: 70px;
+
+}
+.firstRowSmPhotoGall{
+
+        height: 95px;
+        background-color: aquamarine;
+        width: 95px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+}
+.galleryRow2User{
+    display: flex;
+}
