@@ -123,7 +123,7 @@ const RegisterationFifthScreen = () => {
 
             <div className="spinnerMiniContainer">
               <div className="divSpinner">
-              <input className="spinnerContent" placeholder="Future plan to live"   onChange={formik.handleChange}  
+              <input className="spinnerContent" placeholder="Future plan to live"     onChange={formik.handleChange}  
                            value={formik.values.futurePlan} required spellcheck="false"/>
                 <div className="required">Required</div>
               </div>
