@@ -9,7 +9,7 @@ const RegisterationNinthScreen = () => {
       const[showFields,setShowFields]=useState(0);
 
       
-
+      const navigate = useNavigate();
     const fatherOccupation=[
         { value: 'Doctor', label: 'Doctor'},
         { value: 'Engineer', label: 'Engineer'},
@@ -52,6 +52,12 @@ const RegisterationNinthScreen = () => {
         if(values.fatherOccupation && values.motherOccupation && values.socioEcnomicStatus && values.cast)
         {
           setShowFields(1);
+        }
+        if(values.fatherOccupation && values.motherOccupation && values.socioEcnomicStatus && values.cast &&  values.sect && values.Province && values.city )
+        {
+          navigate("/UserHomePage");
+
+
         }
       
      
