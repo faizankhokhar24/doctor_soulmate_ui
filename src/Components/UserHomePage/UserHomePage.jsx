@@ -1,94 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './UserHomePage.css'
 import { FaHome } from 'react-icons/fa';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { SiGooglemessages } from 'react-icons/si';
 import { FaUserTag } from 'react-icons/fa';
-import { BsFillHeartFill } from 'react-icons/bs';
-import { FaFacebookMessenger } from 'react-icons/fa';
-import { BsFillEyeFill } from 'react-icons/bs';
-
-
-
-import { GoVerified } from 'react-icons/go';
-
-import userImage from './../../Images/femaleIconCard.png'
-
-
+import CardsMobile from './../UserHomePage/CardsMobileUser' 
 
 
 
 const UserHomePage = () => {
+
+    const[changeBackground,setChangeBackground]=useState(0);
+    const topBarClicked1=()=>{
+        console.log("clicked")
+        setChangeBackground(1);
+    }
+    const topBarClicked2=()=>{
+        console.log("clicked")
+        setChangeBackground(2);
+    }
+    const topBarClicked3=()=>{
+        console.log("clicked")
+        setChangeBackground(3);
+    }
+    const topBarClicked4=()=>{
+        console.log("clicked")
+        setChangeBackground(4);
+    }
+
   return (
     <>  
         <div className='mainContainerUserHome'>
                     <div className='topUserHomeContainer'> 
-                        <div className='topBarTxt'>
+                        <div className={changeBackground==1?'topBarTxt':'topBarTxt1'} onClick={topBarClicked1}>
                             Searched
                         </div>
-                        <div className='topBarTxt'>
+                        <div className={changeBackground==2?'topBarTxt':'topBarTxt1'} onClick={topBarClicked2}>
                             JUST JOINED
                         </div>
-                        <div className='topBarTxt'>
+                        <div className={changeBackground==3?'topBarTxt':'topBarTxt1'} onClick={topBarClicked3}>
                             MATCHES
                         </div>
-                        <div className='topBarTxt'>
+                        <div className={changeBackground==4?'topBarTxt':'topBarTxt1'} onClick={topBarClicked4}>
                             PREMIUM
                         </div>
                     </div>
-                    <div className='usersCardsContainerMobile'>
-                        <div className='cardUserFirstRow'>
-                            <div className='profileDiv'><img src={userImage} alt="" className="userImage" /></div>
-                            <div className='userDataCard'>
-                                <div className='userNameFR1'>
-                                    <div className='nameAndTick'>
-                                    <p className='nameUserCard'>Dr. Ayesha Azeem
-                                    
-                                    </p>
-                                    <GoVerified className='tickUser'/>
-                                    </div>
-                                    
-                                    <BsFillHeartFill className='heartIconUser'/>
-                                    
-                                </div>
-                                <div className='userAgeGender'>
-                                    <div>Female</div>
-                                    <div className='lineUserCard'></div>
-                                    <div>24</div>
-                                    <div className='lineUserCard'></div>
-                                    <div>Gujjer</div>
-                                </div>
-                                <div className='userProffesionCard'>
-                                    <div>PG Trainee</div>
-                                    <div className='lineUserCard'></div>
-                                    <div>Gynecology</div>
-                                    <div className='lineUserCard'></div>
-                                    <div>Lahore</div>
-                                </div>
-                                <div className='useAppearanceCard'>
-                                    <div>Good Looking</div>
-                                    <div className='lineUserCard'></div>
-                                    <div>Fair</div>
-                                    <div className='lineUserCard'></div>
-                                    <div>5.6' Tall</div>
-                                </div>
-                            </div> 
-                        </div>
-                        <div className='hrLineMidUserCard'></div>
-                        <div className='secondRowUserCard'>
-                            <div className='messageIconPartUser'>
-                                <div><FaFacebookMessenger className='cardIconsMessageEye'/></div>
-                                <div className='smsTxtCard'>Send Message</div>
-                            </div>
-                            <div className='eyeIconPartUser'>
-                                <div><BsFillEyeFill className='cardIconsMessageEye'/></div>
-                                <div className='smsTxtCard'>View Profile   </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
+                    <div   className='arrayCardUser'>{[...Array(3)].map(()=>{
+                                return(
+                                    <CardsMobile/>
+                                )
+                            })}</div>
+                   
 
                     <div className='bottomBarUserHomeContainer'>
                             <div className='bottomUserHomeMobile'>

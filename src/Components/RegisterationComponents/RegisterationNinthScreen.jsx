@@ -222,9 +222,9 @@ const RegisterationNinthScreen = () => {
                                  </div>
 
           </div>
-          <button type="submit">Submit</button>
+          {/* <button type="submit">Submit</button> */}
           </form>
-          <Link to='/UserHomePage'><button>Move Home Page</button></Link>
+          {/* <Link to='/UserHomePage'><button>Move Home Page</button></Link> */}
 
 </div>         
     </>

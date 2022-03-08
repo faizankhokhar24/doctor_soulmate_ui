@@ -46,6 +46,23 @@ p{
     color: #77B291;
     font-size: 14px;
     font-weight: 700;
+    background: #EEF3FF;
+    width: 91px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topBarTxt1{
+    color: #77B291;
+    font-size: 14px;
+    font-weight: 700;
+    
+    width: 91px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .topUserHomeContainer{
     display: flex;
@@ -85,6 +102,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 14px;
 }
 .lineUserCard{
     width: 1px;
@@ -168,6 +186,16 @@ p{
 
 .mainContainerUserHome{
     display: none;
+}
+.arrayCardUser{
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+ 
+    height: 100%;
+
+
 }
 @media (max-width:600px) {
     .mainContainerUserHome{
