@@ -176,11 +176,11 @@ const RegiseterationSixthScreen = () => {
                                  </div>
 
           </div>
-          <button type="submit">submit</button>
+          {/* <button type="submit">submit</button> */}
           </form>
 
     </div>
-     <Link to="/RegisterationSeventhScreen">   <button>Move to the seventh Screen</button></Link>
+     {/* <Link to="/RegisterationSeventhScreen">   <button>Move to the seventh Screen</button></Link> */}
 
       
     </>

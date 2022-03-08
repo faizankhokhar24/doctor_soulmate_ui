@@ -6,13 +6,17 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Custom from "./SpinnerFiles/Custom";
 export {useFormik} from 'formik';
 
+
 const RegisterationFifthScreen = () => {
+  const navigate = useNavigate();
 
 
   const validate=values=>{
-    const errors={}
+    const errors={} 
 
-   
+      if(values.Country && values.Province && values.City && values.House && values.otherNationality && values.futurePlan){
+          navigate("/RegisterationSixthScreen");
+      }
 
 
     return errors;
@@ -43,6 +47,7 @@ const RegisterationFifthScreen = () => {
         House:"",
         futurePlan:"",
       otherNationality:"",
+      otherNationality:""
      
 
     },
@@ -114,28 +119,37 @@ const RegisterationFifthScreen = () => {
             </div>
             <div className="spinnerMiniContainer">
               <div className="divSpinner">
-              <input className="spinnerContent" placeholder="Any other nationality" type="text"  name="anyOtherNAtionality" onChange={formik.handleChange}  
-                           value={formik.values.otherNationality} required spellcheck="false"/>
-               
+              <input   className="spinnerContent" type='text' 
+                                     name="otherNationality" placeholder='Other Nationality'
+                                       value={formik.values.otherNationality}
+
+                                       onChange={formik.handleChange}
+                                     />
+             
                 <div className="required">Required</div>
               </div>
             </div>
 
             <div className="spinnerMiniContainer">
               <div className="divSpinner">
-              <input className="spinnerContent" placeholder="Future plan to live"     onChange={formik.handleChange}  
-                           value={formik.values.futurePlan} required spellcheck="false"/>
+              <input   className="spinnerContent" type='text' 
+                                     name="futurePlan" placeholder='Future Plan'
+                                       value={formik.values.futurePlan}
+
+                                       onChange={formik.handleChange}
+                                     />
+
                 <div className="required">Required</div>
               </div>
             </div>
-            <button type="Submit">Submit</button>
+            {/* <button type="Submit">Submit</button> */}
           </form>
         </div>
       </div>
-      <Link to="/RegisterationSixthScreen">
+      {/* <Link to="/RegisterationSixthScreen">
         {" "}
         <button>Move to the sixth screen</button>
-      </Link>
+      </Link> */}
     </>
   );
 };

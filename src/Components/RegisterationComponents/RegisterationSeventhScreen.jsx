@@ -4,6 +4,7 @@ import Select from "react-select";
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 import Custom from "./SpinnerFiles/Custom";
+// import { handleInputChange } from "react-select/dist/declarations/src/utils";
 export {useFormik} from 'formik'
 const RegisterationSeventhScreen = () => {
 
@@ -13,7 +14,7 @@ const RegisterationSeventhScreen = () => {
    
     const errors={}
     if(values.fatherOccupation && values.motherOccupation && values.siblings && values.socioEcnomicStatus && values.anyOtherInfo){
-      navigate("/RegisterationSeventhScreen");
+       navigate("/RegisterationEigthScreen");
 
     }
   
@@ -28,8 +29,8 @@ const RegisterationSeventhScreen = () => {
       ]
       
       const Siblings=[
-        { value: 'Doctor', label: 'Doctor'},
-        { value: 'Engineer', label: 'Engineer'},
+        { value: '2', label: '2'},
+        { value: '3', label: '3'},
         ]
 
       const socioEcnomicStatus=[
@@ -41,7 +42,7 @@ const RegisterationSeventhScreen = () => {
 
           fatherOccupation:"",   
           motherOccupation:"",
-            workPlace:"",
+          
             siblings:"",
          
             socioEcnomicStatus:"",
@@ -59,8 +60,8 @@ const RegisterationSeventhScreen = () => {
     <div className="mainContainerWeb">
      
        
-     <form className="containerCard">
-         <div className='spinnerMiniContainer'>
+     <form className="containerCard" onSubmit={formik.handleSubmit}>
+         <div className='spinnerMiniContainer' >
                                     <div className="divSpinner">
                                    
                                     <Custom
@@ -135,16 +136,22 @@ const RegisterationSeventhScreen = () => {
                                     <div className="divSpinner">
                                    
 
-                                     <input   className="spinnerContent" type='text' name="anyOtherInfo" placeholder='Any other info'/>
+                                     <input   className="spinnerContent" type='text' 
+                                     name="anyOtherInfo" placeholder='Any other info'
+                                       value={formik.values.anyOtherInfo}
+
+                                       onChange={formik.handleChange}
+                                     />
                                      <div className="required">Required</div>
 
                                  </div>
 
           </div>
+          {/* <button>Submit</button> */}
           </form>
           </div>
 
-         <Link to="/RegisterationEigthScreen">   <button>move next page</button></Link>
+         {/* <Link to="/RegisterationEigthScreen">   <button>move next page</button></Link> */}
     
     </>
   )
