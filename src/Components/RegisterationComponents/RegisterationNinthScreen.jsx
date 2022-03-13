@@ -55,7 +55,7 @@ const RegisterationNinthScreen = () => {
         }
         if(values.fatherOccupation && values.motherOccupation && values.socioEcnomicStatus && values.cast &&  values.sect && values.Province && values.city )
         {
-          navigate("/UserHomePage");
+          navigate("/UserDashBoard");
 
 
         }

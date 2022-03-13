@@ -1,0 +1,165 @@
+.mainContainerWebBU{
+    width: 100%;
+    height: 100vh;
+    background-color: #ede9e9;
+    display: flex;
+
+}
+.webBU1Col{
+    width:25%;
+    height: 100%;
+    background-image: linear-gradient(to right, #7b4397 , #dc2430);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.webBU2Col{
+    width: 55%;
+    height: 500px;
+    
+}
+.webBU3Col{
+    width: 23%;
+    height: 100%;
+   background-color: #fff;
+   border-left: 1px solid lightgray;
+
+}
+
+.userPicBackWeb {
+    margin-top: 20px;
+    background-color: pink;
+
+    border-radius: 90px;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userPicWebView{
+    width: 130px;
+    height: 130px;
+}
+.headingUserNameWb{
+    font-size: 30px;
+}
+.contactsHeadingUserWeb {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px; */
+    height: 58px;
+    align-items: center;
+    padding: 15px;
+}
+.userPicBackWebContact{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.userPicWebViewContact{
+    width: 40px;
+    height: 40px;
+}
+.userPicBackWebContact{
+    display: flex;
+}
+.webContactUserCard{
+    display: flex;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.nameWebContactUser{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.headingCntcts{
+    font-size: 30px;
+  
+    font-weight: 600;
+
+    color: #dc2430;
+}
+.searchIconWebV{
+    fill:  #dc2430;
+    font-size: 30px;
+}
+.activitySumCard{
+    width: 210px;
+    height: 85px;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 21px;
+    margin-right: 20px;
+}
+.actSumCardTxt{
+    margin-left: 15px;
+}
+.mainContainerActSumCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.addProfCard{
+    width: 100%;
+    
+    height: 215px;
+    display: flex;
+    justify-content: center;
+}
+.addProfCardInner{
+    width: 90%;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+}
+
+.addProfLeft{
+    width: 20%;
+    height: 73%;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+.addProfRight{
+
+    width: 80%;
+    height: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+
+}
+.btnSubmitAddProfCard{
+    width: 100px;
+    margin-bottom: 8px;
+    
+}
+.addProTxt{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 27px;
+  
+}
+.headingCol2Web{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+}

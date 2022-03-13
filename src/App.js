@@ -25,6 +25,7 @@ import RegisterationSeventhScreen from './Components/RegisterationComponents/Reg
 import RegisterationNinthScreen from './Components/RegisterationComponents/RegisterationNinthScreen';
 import UserHomePage from './Components/UserHomePage/UserHomePage';
 import UserPhotoGallery from './Components/UserHomePage/UserPhotoGallery/UserPhotoGallery';
+import { UserDashBoard } from './Components/UserHomePage/UserDashBoard';
 
 function App() {
 
@@ -58,7 +59,8 @@ function App() {
       <Route   path="/RegisterationSeventhScreen" element={<RegisterationSeventhScreen/>} />
       <Route   path="/RegisterationEigthScreen" element={<RegisterationEightScreen/>} />
       <Route   path="/RegisterationNinthScreen" element={<RegisterationNinthScreen/>} />
-      <Route path='/UserHomePage' element={<UserHomePage/>}/>
+    
+      <Route path='/UserDashBoard' element={<UserDashBoard/>}/>
       <Route path='/UserPhotoGallery' element={<UserPhotoGallery/>}/>
 
 
