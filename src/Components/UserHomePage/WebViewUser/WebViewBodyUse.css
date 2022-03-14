@@ -20,6 +20,7 @@
 .webBU2Col{
     width: 55%;
     height: 500px;
+    position: relative;
     
 }
 .webBU3Col{
@@ -135,6 +136,7 @@
     height: 73%;
     border-radius: 5px;
     background-color: lightgray;
+    margin-left: 20px;
 }
 .addProfRight{
 
@@ -163,3 +165,98 @@
     padding-top: 20px;
     font-size: 30px;
 }
+.chatBoxCardWeb{
+    width: 243px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid lightgray;
+    background-color: #fff;
+    position: absolute;
+    bottom: -74px ;
+    right: 0px;
+}
+.userPicWebViewContactChat{
+    width: 25px;
+    height: 25px;
+}
+.userPicBackWebContactChat{
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chatBoxPicPartWeb{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+.fistRowChatBoxWeb{
+    display: flex;
+    justify-content: space-between;
+}
+.nameWebContactUserChat{
+    font-size: 14px;
+}
+.activeStatusTxt{
+    font-size: 10px;
+}
+.iconsChatBoxWeb{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+    .chatBoxPicDesc{
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+
+    }
+
+    .hrLineChatBox{
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+    .plusIconsChatBox{
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .plusIcon{
+        font-size: 14px;
+    }
+    .chatBoxLastRow{
+        display: flex;
+      
+    }
+    .inputTextChatBox{
+        width: 186px;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 6px;
+    }
+    .sendSmsIcon{
+        font-size: 40px;
+       
+        margin-top:-3px;
+        width: 35px;
+        margin-left: -3px;
+    }
+    .dashIcon{
+        font-size:30px;
+    }

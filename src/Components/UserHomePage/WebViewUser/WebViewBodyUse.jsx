@@ -1,5 +1,7 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+
+import CardBox from './../../UserHomePage/Cards'
 import "./WebViewBodyUse.css";
 
 import userPic from "./../../../Images/userProfile.png";
@@ -94,14 +96,19 @@ const WebViewBodyUse = () => {
               <div className="addProfCardInner">
                 <div className="addProfLeft"></div>
                 <div className="addProfRight">
-                  <p className="addProTxt">Add your professional experience for better responses</p>
+                  <p className="addProTxt">
+                    Add your professional experience for better responses
+                  </p>
                   <p>Current employer</p>
                   <hr />
-                  <button className="btnSubmitAddProfCard" type="button">Submit</button>
+                  <button className="btnSubmitAddProfCard" type="button">
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>
           </div>
+          <CardBox/>
         </div>
         <div className="webBU3Col">
           <div className="contactsHeadingUserWeb">
